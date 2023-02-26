@@ -2,9 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Tests\PHPat\Fixtures\Simple;
+namespace Tests\PHPat\fixtures\Simple;
 
-#[\Attribute(\Attribute::TARGET_ALL)]
+use Attribute;
+
+#[Attribute(Attribute::TARGET_ALL)]
 class SimpleAttribute
 {
 }

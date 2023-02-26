@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\PHPat\Unit\Rules\ShouldNotConstruct;
+namespace Tests\PHPat\unit\rules\ShouldNotConstruct;
 
 use PHPat\Configuration;
 use PHPat\Rule\Assertion\Relation\ShouldNotConstruct\NewRule;
@@ -12,10 +12,10 @@ use PHPat\Statement\Builder\StatementBuilderFactory;
 use PHPStan\Rules\Rule;
 use PHPStan\Testing\RuleTestCase;
 use PHPStan\Type\FileTypeMapper;
-use Tests\PHPat\Fixtures\FixtureClass;
-use Tests\PHPat\Fixtures\Simple\SimpleClass;
-use Tests\PHPat\Unit\FakeTestParser;
-use Tests\PHPat\Unit\ErrorMessage;
+use Tests\PHPat\fixtures\FixtureClass;
+use Tests\PHPat\fixtures\Simple\SimpleClass;
+use Tests\PHPat\unit\FakeTestParser;
+use Tests\PHPat\unit\ErrorMessage;
 
 /**
  * @extends RuleTestCase<NewRule>

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\PHPat\Fixtures\Special;
+namespace Tests\PHPat\fixtures\Special;
 
 class ClassWithStaticMethodTwo
 {

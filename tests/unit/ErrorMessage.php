@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\PHPat\Unit;
+namespace Tests\PHPat\unit;
 
 class ErrorMessage
 {

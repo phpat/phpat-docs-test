@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Tests\PHPat\Fixtures\Special;
+namespace Tests\PHPat\fixtures\Special;
 
 use Exception;
-use Tests\PHPat\Fixtures\Simple\SimpleInterface;
+use Tests\PHPat\fixtures\Simple\SimpleInterface;
 
 /**
  * @template T of SimpleInterface

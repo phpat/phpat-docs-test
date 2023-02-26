@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\PHPat\Unit\Rules\ShouldNotBeFinal;
+namespace Tests\PHPat\unit\rules\ShouldNotBeFinal;
 
 use PHPat\Configuration;
 use PHPat\Rule\Assertion\Declaration\ShouldNotBeFinal\IsFinalRule;
@@ -12,9 +12,9 @@ use PHPat\Statement\Builder\StatementBuilderFactory;
 use PHPStan\Rules\Rule;
 use PHPStan\Testing\RuleTestCase;
 use PHPStan\Type\FileTypeMapper;
-use Tests\PHPat\Fixtures\Simple\SimpleFinalClass;
-use Tests\PHPat\Unit\FakeTestParser;
-use Tests\PHPat\Unit\ErrorMessage;
+use Tests\PHPat\fixtures\Simple\SimpleFinalClass;
+use Tests\PHPat\unit\FakeTestParser;
+use Tests\PHPat\unit\ErrorMessage;
 
 /**
  * @extends RuleTestCase<IsFinalRule>

@@ -2,21 +2,21 @@
 
 declare(strict_types=1);
 
-namespace Tests\PHPat\Unit\Rules\CanOnlyDepend;
+namespace Tests\PHPat\unit\rules\CanOnlyDepend;
 
 use PHPat\Configuration;
-use PHPat\Rule\Assertion\Relation\CanOnlyDepend\MethodParamRule;
 use PHPat\Rule\Assertion\Relation\CanOnlyDepend\CanOnlyDepend;
+use PHPat\Rule\Assertion\Relation\CanOnlyDepend\MethodParamRule;
 use PHPat\Selector\Classname;
 use PHPat\Statement\Builder\StatementBuilderFactory;
 use PHPStan\Rules\Rule;
 use PHPStan\Testing\RuleTestCase;
 use PHPStan\Type\FileTypeMapper;
-use Tests\PHPat\Fixtures\FixtureClass;
-use Tests\PHPat\Fixtures\Simple\SimpleClass;
-use Tests\PHPat\Fixtures\Simple\SimpleInterface;
-use Tests\PHPat\Unit\FakeTestParser;
-use Tests\PHPat\Unit\ErrorMessage;
+use Tests\PHPat\fixtures\FixtureClass;
+use Tests\PHPat\fixtures\Simple\SimpleClass;
+use Tests\PHPat\fixtures\Simple\SimpleInterface;
+use Tests\PHPat\unit\FakeTestParser;
+use Tests\PHPat\unit\ErrorMessage;
 
 /**
  * @extends RuleTestCase<MethodParamRule>

@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 namespace Tests\PHPat\fixtures\Simple;
 
-trait SimpleTrait
+use Attribute;
+
+#[Attribute(Attribute::TARGET_ALL)]
+class SimpleAttributeTwo
 {
 }

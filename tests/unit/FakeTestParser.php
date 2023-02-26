@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\PHPat\Unit;
+namespace Tests\PHPat\unit;
 
 use PHPat\Rule\Assertion\Assertion;
 use PHPat\Selector\SelectorInterface;

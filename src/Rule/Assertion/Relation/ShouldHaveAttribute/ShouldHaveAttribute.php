@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace PHPat\Rule\Assertion\Relation\CanOnlyDepend;
+namespace PHPat\Rule\Assertion\Relation\ShouldHaveAttribute;
 
 use PHPat\Configuration;
 use PHPat\Rule\Assertion\AssertionType;
@@ -11,7 +11,7 @@ use PHPat\Statement\Builder\StatementBuilderFactory;
 use PHPStan\Reflection\ReflectionProvider;
 use PHPStan\Type\FileTypeMapper;
 
-abstract class CanOnlyDepend extends RelationAssertion
+abstract class ShouldHaveAttribute extends RelationAssertion
 {
     public function __construct(
         StatementBuilderFactory $statementBuilderFactory,
@@ -30,11 +30,11 @@ abstract class CanOnlyDepend extends RelationAssertion
 
     public function getType(): string
     {
-        return AssertionType::CAN_ONLY;
+        return AssertionType::SHOULD;
     }
 
     protected function getMessage(string $subject, string $target): string
     {
-        return sprintf('%s should not depend on %s', $subject, $target);
+        return sprintf('%s should have as attribute %s', $subject, $target);
     }
 }

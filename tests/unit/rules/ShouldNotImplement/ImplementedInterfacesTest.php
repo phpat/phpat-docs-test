@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\PHPat\Unit\Rules\ShouldNotImplement;
+namespace Tests\PHPat\unit\rules\ShouldNotImplement;
 
 use PHPat\Configuration;
 use PHPat\Rule\Assertion\Relation\ShouldNotImplement\ImplementedInterfacesRule;
@@ -12,10 +12,10 @@ use PHPat\Statement\Builder\StatementBuilderFactory;
 use PHPStan\Rules\Rule;
 use PHPStan\Testing\RuleTestCase;
 use PHPStan\Type\FileTypeMapper;
-use Tests\PHPat\Fixtures\FixtureClass;
-use Tests\PHPat\Fixtures\Simple\SimpleInterface;
-use Tests\PHPat\Unit\FakeTestParser;
-use Tests\PHPat\Unit\ErrorMessage;
+use Tests\PHPat\fixtures\FixtureClass;
+use Tests\PHPat\fixtures\Simple\SimpleInterface;
+use Tests\PHPat\unit\FakeTestParser;
+use Tests\PHPat\unit\ErrorMessage;
 
 /**
  * @extends RuleTestCase<ImplementedInterfacesRule>

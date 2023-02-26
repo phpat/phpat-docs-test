@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\PHPat\Unit\Rules\ShouldBeAbstract;
+namespace Tests\PHPat\unit\rules\ShouldBeAbstract;
 
 use PHPat\Configuration;
 use PHPat\Rule\Assertion\Declaration\ShouldBeAbstract\AbstractRule;
@@ -12,9 +12,9 @@ use PHPat\Statement\Builder\StatementBuilderFactory;
 use PHPStan\Rules\Rule;
 use PHPStan\Testing\RuleTestCase;
 use PHPStan\Type\FileTypeMapper;
-use Tests\PHPat\Fixtures\FixtureClass;
-use Tests\PHPat\Unit\FakeTestParser;
-use Tests\PHPat\Unit\ErrorMessage;
+use Tests\PHPat\fixtures\FixtureClass;
+use Tests\PHPat\unit\FakeTestParser;
+use Tests\PHPat\unit\ErrorMessage;
 
 /**
  * @extends RuleTestCase<AbstractRule>

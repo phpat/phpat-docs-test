@@ -2,45 +2,41 @@
 
 declare(strict_types=1);
 
-namespace Tests\PHPat\unit\rules\CanOnlyDepend;
+namespace Tests\PHPat\unit\rules\ShouldHaveAttribute;
 
 use PHPat\Configuration;
-use PHPat\Rule\Assertion\Relation\CanOnlyDepend\CanOnlyDepend;
-use PHPat\Rule\Assertion\Relation\CanOnlyDepend\MethodReturnRule;
+use PHPat\Rule\Assertion\Relation\ShouldHaveAttribute\ClassAttributeRule;
+use PHPat\Rule\Assertion\Relation\ShouldHaveAttribute\ShouldHaveAttribute;
 use PHPat\Selector\Classname;
 use PHPat\Statement\Builder\StatementBuilderFactory;
 use PHPStan\Rules\Rule;
 use PHPStan\Testing\RuleTestCase;
 use PHPStan\Type\FileTypeMapper;
 use Tests\PHPat\fixtures\FixtureClass;
-use Tests\PHPat\fixtures\Simple\SimpleClass;
-use Tests\PHPat\fixtures\Simple\SimpleInterface;
+use Tests\PHPat\fixtures\Simple\SimpleAttributeTwo;
 use Tests\PHPat\unit\FakeTestParser;
-use Tests\PHPat\unit\ErrorMessage;
 
 /**
- * @extends RuleTestCase<MethodReturnRule>
+ * @extends RuleTestCase<ClassAttributeRule>
  */
-class MethodReturnTest extends RuleTestCase
+class ClassAttributeTest extends RuleTestCase
 {
     public function testRule(): void
     {
         $this->analyse(['tests/fixtures/FixtureClass.php'], [
-            [sprintf(ErrorMessage::SHOULD_NOT_DEPEND, FixtureClass::class, SimpleInterface::class), 48],
+            [sprintf('%s should have as attribute %s', FixtureClass::class, SimpleAttributeTwo::class), 31],
         ]);
     }
 
     protected function getRule(): Rule
     {
         $testParser = FakeTestParser::create(
-            CanOnlyDepend::class,
+            ShouldHaveAttribute::class,
             [new Classname(FixtureClass::class, false)],
-            [
-                new Classname(SimpleClass::class, false),
-            ]
+            [new Classname(SimpleAttributeTwo::class, false)]
         );
 
-        return new MethodReturnRule(
+        return new ClassAttributeRule(
             new StatementBuilderFactory($testParser),
             new Configuration(false),
             $this->createReflectionProvider(),

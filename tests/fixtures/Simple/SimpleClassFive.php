@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\PHPat\Fixtures\Simple;
+namespace Tests\PHPat\fixtures\Simple;
 
 class SimpleClassFive
 {
