@@ -4,7 +4,6 @@
 </p>
 <h2 align="center">Easy to use architecture testing tool for PHP</h2>
 
-
 <hr />
 
 **PHP Architecture Tester** is a [PHPStan](https://phpstan.org/) extension designed to verify architectural requirements.
