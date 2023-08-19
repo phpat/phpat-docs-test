@@ -35,7 +35,7 @@ To build the documentation locally, run:
 docker run -p 8000:8000 --rm -v$(pwd):/docs squidfunk/mkdocs-material:9
 ```
 When the container is running, you can access the documentation at http://localhost:8000.
-When the pull request is merged, the documentation will be automatically deployed to https://phpat.carlosas.me.
+When the pull request is merged, the documentation will be automatically deployed to https://www.google.com.
 
 ## Slack channel
 
