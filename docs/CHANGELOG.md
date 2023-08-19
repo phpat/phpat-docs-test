@@ -1,6 +1,7 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+
 ## 0.10.7
 * Add tips to rule building using `because()`.
 * Add `readonly()` selector and `shouldBeReadonly()` assertion. 
