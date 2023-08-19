@@ -8,3 +8,5 @@
 <a href="https://www.blackfire.io">
     <img src="https://avatars.githubusercontent.com/u/8961067?s=100" alt="BlackFire Logo" width="100"/>
 </a>
+
+<hr />
