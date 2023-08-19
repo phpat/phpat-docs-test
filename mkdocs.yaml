@@ -6,7 +6,6 @@ site_description: Easy to use architecture testing tool for PHP
 repo_url: https://github.com/carlosas/phpat/
 
 docs_dir: ./docs
-exclude_docs: .assets
 
 theme:
   name: material
